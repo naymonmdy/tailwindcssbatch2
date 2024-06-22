@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-skew=1.0" />
+    <title> Gray Scale/ Invert /Sepia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+      .box{
+            width: 300px;
+            height: 200px;
+
+        }
+    
+ 
+    </style>
+  </head>
+  <body>
+    <h1>Photo Effect with grayscale , invert and sepia</h1>
+    <div class="box grayscale">
+      <img src="./img/glaxy.jpg" alt="" srcset="">
+    </div>
+    <hr>
+    <div class="box grayscale-0 ">
+      <img src="./img/glaxy.jpg" alt="" srcset="">
+    </div>
+    <hr>
+    <div class="box invert">
+      <img src="./img/glaxy.jpg" alt="" srcset="">
+    </div>
+    <hr>
+    <div class="box invert-0">
+      <img src="./img/glaxy.jpg" alt="" srcset="">
+    </div>
+    <hr>
+    <div class="box sepia">
+      <img src="./img/glaxy.jpg" alt="" srcset="">
+    </div>
+    <hr>
+    <div class="box sepia-0">
+      <img src="./img/glaxy.jpg" alt="" srcset="">
+    </div>
+    <hr>
+   
+  </body>
+</html>
+<!--
+To blur and photo contrast
+grayscale-0    filter:grayscale(0%)  0 to 100%
+grayscale
+
+invert-0     filter:invert(0%)
+invert
+
+sepia-0     filter:sepia(0%)
+sepia
+
+
+-->
