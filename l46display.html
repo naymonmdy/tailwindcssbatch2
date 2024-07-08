@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-skew=1.0" />
+    <title>Display</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+      .box{
+            width: 200px;
+            height: 200px;
+            background: silver;
+
+        }
+    .div1{
+            width: 100px;
+            height: 100px;
+            background: black;
+            color: white;
+
+    }
+    .div2{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            color: white;
+
+    }
+    .bigbox{
+            width: 600px;
+            height: 200px;
+            background:gray;
+            color: white;
+
+    }
+ 
+    </style>
+  </head>
+  <body>
+    <h1>flex</h1>
+    <div class="box flex">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>grid</h1>
+    <div class="box grid">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>Justify content start</h1>
+    <div class="box flex justify-start">
+        <div class="div1"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>Justify content center</h1>
+    <div class="box flex justify-center">
+        <div class="div1"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>Justify content end</h1>
+    <div class="box flex justify-end">
+        <div class="div1"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>Justify content between</h1>
+    <div class="bigbox flex justify-between">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>align-items start</h1>
+    <div class="bigbox flex items-start">
+        <div class="div1"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>align-items center</h1>
+    <div class="bigbox flex items-center">
+        <div class="div1"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h1>align-items end</h1>
+    <div class="bigbox flex items-end">
+        <div class="div1"></div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+  </body>
+</html>
+<!--        
+ items-start    align-items:start;
+ items-center    align-items:center;
+ items-end    align-items:end;
+
+
+self-auto    align-self:auto;
+
+self-start    align-self:start;
+self-center    align-self:center;
+self-end    align-self:end;
+
+self-sketch        align-self:sketch;
+self-baseline      align-self:baseline;
+
+
+
+content-start       align-content:flex-start;
+content-center      align-content:center;
+content-end         align-content:flex-end;
+
+
+content-between     align-content:space-between;
+content-around      align-content:space-evenly;
+content-evenly      align-content:space-end;
+content-baseline    align-content:flex-end;
+
+-->
