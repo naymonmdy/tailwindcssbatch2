@@ -12,10 +12,125 @@
   </head>
   <body>
     <h1>This is tailwind css using CDN Link</h1>
+    <h4> Gird Column</h4>
     <hr/>
-    <div class="w-96 h-44 bg-stone-200 flex space-x-44 m-10">
-        <div class="w-20 h-20 bg-green-800 text-white"> DIV1</div>
-        <div class="w-20 h-20 bg-green-900 text-white"> DIV2</div>
+    <div class="text-white grid grid-cols-12">
+        <div class="w-44 h-20 bg-green-900"> DIV1</div>
+        <div class="w-44 h-20 bg-green-900"> DIV2</div>
+        <div class="w-44 h-20 bg-green-900"> DIV3</div>
+        <div class="w-44 h-20 bg-green-900"> DIV4</div>
+        <div class="w-44 h-20 bg-green-900"> DIV5</div>
+        <div class="w-44 h-20 bg-green-900"> DIV6</div>
+        <div class="w-44 h-20 bg-green-900"> DIV7</div>
+        <div class="w-44 h-20 bg-green-900"> DIV8</div>
+        <div class="w-44 h-20 bg-green-900"> DIV9</div>
+        <div class="w-44 h-20 bg-green-900"> DIV10</div>
+        <div class="w-44 h-20 bg-green-900"> DIV11</div>
+        <div class="w-44 h-20 bg-green-900"> DIV12</div>
+
+    </div>
+    <h4> Column-Span</h4>
+    <hr class="my-5"/>
+    <div class="grid grid-cols-3 gap-4 text-white">
+        <div class=" h-20 bg-green-900"> DIV1</div>
+        <div class=" h-20 bg-green-900"> DIV2</div>
+        <div class=" h-20 bg-green-900 col-span-2"> DIV3</div>
+        <div class=" h-20 bg-green-900"> DIV4</div>
+        <div class=" h-20 bg-green-900"> DIV5</div>
+        <div class=" h-20 bg-green-900 col-span-3"> DIV6</div>
+        <div class=" h-20 bg-green-900"> DIV7</div>
+        <div class=" h-20 bg-green-900 col-span-3"> DIV8</div>
+        <div class=" h-20 bg-green-900"> DIV9</div>
+        <div class=" h-20 bg-green-900"> DIV10</div>
+        <div class=" h-20 bg-green-900"> DIV11</div>
+        <div class=" h-20 bg-green-900"> DIV12</div>
+    </div>
+
+    <h4> col-start/col-end</h4>
+    <hr class="my-5"/>
+    <div class="grid grid-cols-4 gap-4 text-white">
+        <div class=" h-20 bg-green-900 col-start-2"> DIV1</div>
+        <div class=" h-20 bg-green-900"> DIV2</div>
+        <div class=" h-20 bg-green-900 "> DIV3</div>
+        <div class=" h-20 bg-green-900 col-span-2 col-start-2"> DIV4</div>
+        <div class=" h-20 bg-green-900"> DIV5</div>
+        <div class=" h-20 bg-green-900 col-span-3 col-start-2"> DIV6</div>
+        <div class=" h-20 bg-green-900 col-start-4"> DIV7</div>
+        <div class=" h-20 bg-green-900 col-span-3"> DIV8</div>
+        <div class=" h-20 bg-green-900"> DIV9</div>
+        <div class=" h-20 bg-green-900"> DIV10</div>
+        <div class=" h-20 bg-green-900 col-start-1 col-end-5"> DIV11</div>
+        <div class=" h-20 bg-green-900"> DIV12</div>
+    </div>
+
+    <h4> grid grid-flow-col grid-rows</h4>
+    <hr/>
+    <div class="text-white grid grid-flow-col gap-3 grid-rows-3">
+        <div class=" h-20 bg-green-900"> DIV1</div>
+        <div class=" h-20 bg-green-900"> DIV2</div>
+        <div class=" h-20 bg-green-900"> DIV3</div>
+        <div class=" h-20 bg-green-900"> DIV4</div>
+        <div class=" h-20 bg-green-900"> DIV5</div>
+        <div class=" h-20 bg-green-900"> DIV6</div>
+        <div class=" h-20 bg-green-900"> DIV7</div>
+        <div class=" h-20 bg-green-900"> DIV8</div>
+        <div class=" h-20 bg-green-900"> DIV9</div>
+        <div class=" h-20 bg-green-900"> DIV10</div>
+        <div class=" h-20 bg-green-900"> DIV11</div>
+        <div class=" h-20 bg-green-900"> DIV12</div>
+
+    </div>
+
+    <h4> grid grid-flow-col grid-rows row-span-value</h4>
+    <hr/>
+    <div class="text-white grid grid-flow-col grid-rows-3 gap-4">
+        <div class="w-44 h-20 bg-green-900 row-span-3"> DIV1</div>
+        <div class="w-44 h-20 bg-green-900"> DIV2</div>
+        <div class="w-44 h-20 bg-green-900"> DIV3</div>
+        <div class="w-44 h-20 bg-green-900"> DIV4</div>
+        <div class="w-44 h-20 bg-green-900 row-span-3"> DIV5</div>
+        <div class="w-44 h-20 bg-green-900"> DIV6</div>
+        <div class="w-44 h-20 bg-green-900"> DIV7</div>
+        <div class="w-44 h-20 bg-green-900"> DIV8</div>
+        <div class="w-44 h-20 bg-green-900"> DIV9</div>
+        <div class="w-44 h-20 bg-green-900"> DIV10</div>
+        <div class="w-44 h-20 bg-green-900"> DIV11</div>
+        <div class="w-44 h-20 bg-green-900"> DIV12</div>
+
+    </div>
+    <h4>Exercise</h4>
+    <div class="text-white grid grid-flow-col grid-rows-3 gap-2">
+      <div class="bg-green-900 col-span-3 row-span-2"> DIV1</div>
+      <div class="bg-green-900"> DIV2</div>
+      <div class="bg-green-900"> DIV3</div>
+      <div class="bg-green-900"> DIV4</div>
+      <div class="bg-green-900"> DIV5</div>
+      <div class="bg-green-900"> DIV6</div>
+      <div class="bg-green-900"> DIV7</div>
+      <div class="bg-green-900"> DIV8</div>
+      <div class="bg-green-900"> DIV9</div>
+      <div class="bg-green-900"> DIV10</div>
+      <div class="bg-green-900"> DIV11</div>
+      <div class="bg-green-900 row-span-2"> DIV12</div>
+
+    </div>
+
+
+    <h4>row-start/ row-end</h4>
+    <div class="text-white grid grid-flow-col grid-rows-3 gap-2">
+      <div class="bg-green-900 row-span-2 row-start-2"> DIV1</div>
+      <div class="bg-green-900 col-span-2"> DIV2</div>
+      <div class="bg-green-900"> DIV3</div>
+      <div class="bg-green-900"> DIV4</div>
+      <div class="bg-green-900"> DIV5</div>
+      <div class="bg-green-900"> DIV6</div>
+      <div class="bg-green-900"> DIV7</div>
+      <div class="bg-green-900"> DIV8</div>
+      <div class="bg-green-900"> DIV9</div>
+      <div class="bg-green-900"> DIV10</div>
+      <div class="bg-green-900 row-start-3"> DIV11</div>
+      <div class="bg-green-900 row-start-1 row-end-4"> DIV12</div>
+
     </div>
 
   </body>
